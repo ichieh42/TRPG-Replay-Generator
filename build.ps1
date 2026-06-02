@@ -1,4 +1,5 @@
 # 打包
+.venv\Scripts\Activate.ps1
 pyinstaller.exe .\gui.d.spec
 
 # 改可执行文件的名字
