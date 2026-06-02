@@ -13,3 +13,4 @@ pyttsx3==2.90
 websocket-client==1.0.1
 pinyin==0.4.0
 emoji==2.14.1
+git+https://github.com/aliyun/alibabacloud-nls-python-sdk.git
