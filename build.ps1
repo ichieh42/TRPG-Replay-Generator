@@ -8,8 +8,7 @@ Move-Item .\dist\gui\gui.exe  .\dist\gui\RplGenStudio.exe
 # 复制到dist文件夹
 Copy-Item .\assets .\dist\gui\ -r 
 Copy-Item .\intel .\dist\gui\ -r 
-Copy-Item .\ffmpeg.exe .\dist\gui\
-Copy-Item .\ffprobe.exe .\dist\gui\
+Copy-Item .\ffmpeg\* .\dist\gui\ -r
 
 # 获取md5
 certutil -hashfile .\dist\gui\RplGenStudio.exe MD5
