@@ -1,6 +1,7 @@
 # 打包
 .venv\Scripts\Activate.ps1
-pyinstaller.exe .\gui.d.spec
+pip install pyinstaller
+pyinstaller.exe .\gui.d.spec --noconfirm
 
 # 改可执行文件的名字
 Move-Item .\dist\gui\gui.exe  .\dist\gui\RplGenStudio.exe
