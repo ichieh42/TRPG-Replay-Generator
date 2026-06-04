@@ -82,8 +82,8 @@ class Aliyun_TTS_engine(TTS_engine):
             self.balance = balance
         self.synthesizer = nls.NlsSpeechSynthesizer(
                     url=Aliyun_TTS_engine.URL,
-                    akid=Aliyun_TTS_engine.AKID, # BUG in aliyun nls SDK v1.0.0，ak和aks不再是这个类的初始化参数，将仅支持token
-                    aksecret=Aliyun_TTS_engine.AKKEY,
+#                    akid=Aliyun_TTS_engine.AKID, # BUG in aliyun nls SDK v1.0.0，ak和aks不再是这个类的初始化参数，将仅支持token
+                    token=Aliyun_TTS_engine.AKKEY,
                     appkey=Aliyun_TTS_engine.APPKEY,
                     on_data=self.on_data,
                     on_close=self.on_close,
